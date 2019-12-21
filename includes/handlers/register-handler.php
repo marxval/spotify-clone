@@ -26,14 +26,16 @@ if (isset($_POST['registerButton'])) {
     $username = sanatizeForm($_POST['username']);
     $firstName = sanatizeFormName($_POST['firstName']);
     $lastName = sanatizeFormName($_POST['lastName']);
-    $email = sanatizeFormName($_POST['email']);
-    $emailConfirmation = sanatizeFormName($_POST['emailConfirmation']);
+    $email = sanatizeForm($_POST['email']);
+    $emailConfirmation = sanatizeForm($_POST['emailConfirmation']);
     $password = sanatizeFormPassword($_POST['registerPassword']);
     $passwordConfirmation = sanatizeFormPassword($_POST['passwordConfirmation']);
 
     $wasSuccessful = $account->register($username, $firstName, $lastName, $email, $emailConfirmation, $password, $passwordConfirmation);
 
     if ($wasSuccessful) {
+        // Creating session variables
+        $_SESSION['userLoggedIn'] = $username;
         header("Location: index.php");
     }
 }
