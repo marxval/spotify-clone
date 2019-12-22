@@ -5,6 +5,11 @@ body {
   height: 100%;
 }
 
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
 #nowPlayingBarContainer {
   width: 100%;
   background-color: #282828;
@@ -24,6 +29,11 @@ body {
 #nowPlayingRight {
   width: 30%;
   min-width: 180px;
+}
+
+#nowPlayingRight {
+  position: relative;
+  margin-top: 10px;
 }
 
 #nowPlayingCenter {
@@ -52,6 +62,10 @@ body {
 .controlButton img {
   width: 20px;
   height: 20px;
+}
+
+.controlButton.volume img {
+  margin-top: 10px;
 }
 
 .controlButton.pause img,
@@ -98,4 +112,38 @@ body {
 
 .playbackBar .progressBar {
   margin-top: 3px;
+}
+
+#nowPlayingLeft .albumArtwork {
+  background-size: cover;
+  height: 57px;
+  max-width: 57px;
+  margin-right: 15px;
+  float: left;
+}
+
+.trackInfo {
+  display: table;
+  width: auto;
+}
+
+#nowPlayingLeft .trackInfo .trackName {
+  display: inline-block;
+  margin: 6px 0;
+  width: 100%;
+}
+
+#nowPlayingLeft .trackInfo .artistName span {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.volumeBar {
+  width: 180px;
+  position: absolute;
+  right: 0;
+}
+
+.volumeBar .progressBar {
+  width: 125px;
 }
