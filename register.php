@@ -115,12 +115,12 @@ function getInputValue($name)
 				</form>
 			</div>
 			<div id="loginText">
-				<h1>The music of cosmos</h1>
-				<h2>Listen to unique sounds only played in space</h2>
+				<h1>Get great music, right now</h1>
+				<h2>Listen to loads of songs for free</h2>
 				<ul>
-					<li>Discover sounds you'll fall in love with</li>
+					<li>Discover music you'll fall in love with</li>
 					<li>Create your own playlist</li>
-					<li>Follow other people playlist to keep up to date</li>
+					<li>Follow artists to keep up to date</li>
 				</ul>
 			</div>
 		</div>
